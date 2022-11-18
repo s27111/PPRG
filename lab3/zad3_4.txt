@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int w;
+    int a = 1;
+
+    cout<<"Podaj ilosc wierszy: ";
+    cin>>w;
+
+    for(int i= 0; i<w; i++)
+    {
+        for(int j= 1; j<= w-i; j++)
+        {
+            cout <<"  ";
+        }
+        for(int k= 0; k<= i; k++)
+        {
+            if (k== 0 || i== 0)
+            {    
+                a=1;
+            }
+            else
+             a=a*(i-k+1)/k;
+             cout<<a<< "   ";
+            
+        }
+        cout<<endl;
+    }
+
+    return 0;
+}
